@@ -1,11 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pro Edu</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- daisyUi CDN -->
+	<link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+	<script src="https://cdn.tailwindcss.com"></script>
+
+	<!-- Google Font poppins -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+		integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="./images/favicon/site.webmanifest">
+
+	<style>
+		.font-poppins {
+			font-family: 'Poppins', sans-serif;
+		}
+
+		body {
+			margin: 0 auto;
+			padding: 0 auto;
+		}
+	</style>
+
+	<script>
+		tailwind.config = {
+			theme: {
+				container: {
+					center: true,
+				},
+				extend: {
+					colors: {
+						'primary-color': '#289BDE',
+					}
+				}
+			}
+		}
+	</script>
+
+	<title>Pro Edu</title>
 </head>
-<body>
-    
+
+<body class="font-poppins">
+	<!-- <header class="container">
+		<div class="navbar bg-base-100">
+			<div class="navbar-start">
+				<a class="btn btn-ghost normal-case text-4xl font-semibold">Pro Edu</a>
+			</div>
+			<div class="navbar-center hidden lg:flex">
+				<ul class="menu menu-horizontal px-1  lg:gap-4 xl:gap-6">
+					<li><a class="text-gray-500 text-lg">Home</a></li>
+					<li><a class="text-gray-500 text-lg">Courses</a></li>
+					<li><a class="text-gray-500 text-lg">Deals</a></li>
+					<li><a class="text-gray-500 text-lg">Success</a></li>
+					<li><a class="text-gray-500 text-lg">About</a></li>
+					<li><a class="text-gray-500 text-lg">Register</a></li>
+				</ul>
+			</div>
+			<div class="navbar-end gap-2">
+				<a
+					class="btn btn-outline px-8 py-3 font-semibold capitalize text-primary-color text-xl leading-none hidden md:flex">Register</a>
+				<div class="dropdown dropdown-end">
+					<label tabindex="0" class="btn btn-ghost lg:hidden">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+							stroke="currentColor" class="w-6 h-6">
+							<path stroke-linecap="round" stroke-linejoin="round"
+								d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+						</svg>
+					</label>
+					<ul tabindex="0"
+						class="menu menu-sm dropdown-content dropdown-end mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+						<li><a>Home</a></li>
+						<li><a>Courses</a></li>
+						<li><a>Deals</a></li>
+						<li><a>Success</a></li>
+						<li><a>About</a></li>
+						<li><a>Register</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header> -->
+	<main class="container">
+		<section class="banner">
+			<div class="carousel w-full">
+				<div id="slide1" class="carousel-item relative w-full">
+					<!-- <img src="./images/cover/cover-1.png" class="w-full" /> -->
+					<div class="hero min-h-[calc(100vh)]" style="background-image: url(./images/cover/cover-1.png);">
+						<div class="hero-overlay bg-opacity-60"></div>
+						<div class="hero-content text-center text-neutral-content">
+							<div class="max-w-md">
+								<h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+								<p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+									excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+								<button class="btn btn-primary">Get Started</button>
+							</div>
+						</div>
+					</div>
+					<div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+						<a href="#slide3" class="btn btn-ghost">❮</a>
+						<a href="#slide2" class="btn btn-ghost">❯</a>
+					</div>
+				</div>
+				<div id="slide2" class="carousel-item relative w-full">
+					<!-- <img src="./images/cover/cover-2.jpg" class="w-full" /> -->
+					<div class="hero min-h-[calc(100vh)]" style="background-image: url(./images/cover/cover-2.jpg);">
+						<div class="hero-overlay bg-opacity-60"></div>
+						<div class="hero-content text-center text-neutral-content">
+							<div class="max-w-md">
+								<h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+								<p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+									excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+								<button class="btn btn-primary">Get Started</button>
+							</div>
+						</div>
+					</div>
+					<div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+						<a href="#slide1" class="btn btn-ghost">❮</a>
+						<a href="#slide3" class="btn btn-ghost">❯</a>
+					</div>
+				</div>
+				<div id="slide3" class="carousel-item relative w-full">
+					<!-- <img src="./images/cover/cover-3.jpg" class="w-full" /> -->
+					<div class="hero min-h-[calc(100vh)]" style="background-image: url(./images/cover/cover-3.jpg);">
+						<div class="hero-overlay bg-opacity-60"></div>
+						<div class="hero-content text-center text-neutral-content">
+							<div class="max-w-md">
+								<h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+								<p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+									excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+								<button class="btn btn-primary">Get Started</button>
+							</div>
+						</div>
+					</div>
+					<div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+						<a href="#slide2" class="btn btn-ghost">❮</a>
+						<a href="#slide1" class="btn btn-ghost">❯</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+
 </body>
+
 </html>
