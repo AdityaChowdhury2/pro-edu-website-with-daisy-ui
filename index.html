@@ -29,11 +29,6 @@
 		.font-poppins {
 			font-family: 'Poppins', sans-serif;
 		}
-
-		body {
-			margin: 0 auto;
-			padding: 0 auto;
-		}
 	</style>
 
 	<script>
@@ -55,10 +50,10 @@
 </head>
 
 <body class="font-poppins">
-	<!-- <header class="container">
+	<header class="container">
 		<div class="navbar bg-base-100">
 			<div class="navbar-start">
-				<a class="btn btn-ghost normal-case text-4xl font-semibold">Pro Edu</a>
+				<a class="btn btn-ghost normal-case text-2xl md:text-4xl lg:text-[2.5rem] font-semibold">Pro Edu</a>
 			</div>
 			<div class="navbar-center hidden lg:flex">
 				<ul class="menu menu-horizontal px-1  lg:gap-4 xl:gap-6">
@@ -74,12 +69,18 @@
 				<a
 					class="btn btn-outline px-8 py-3 font-semibold capitalize text-primary-color text-xl leading-none hidden md:flex">Register</a>
 				<div class="dropdown dropdown-end">
-					<label tabindex="0" class="btn btn-ghost lg:hidden">
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+					<label tabindex="0" class="btn btn-ghost lg:hidden relative">
+						<div class="w-4 h-[2px] rounded-xl 
+						  bg-black 
+							before:absolute before:w-5 before:h-[2px] before:content-[''] before:bg-black before:right-4 before:top-4 before:rounded-xl
+						after:absolute after:w-5 after:h-[2px] after:content-[''] after:bg-black after:right-4 after:bottom-4 after:rounded-xl
+							">
+						</div>
+						<!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
 							stroke="currentColor" class="w-6 h-6">
 							<path stroke-linecap="round" stroke-linejoin="round"
 								d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-						</svg>
+						</svg> -->
 					</label>
 					<ul tabindex="0"
 						class="menu menu-sm dropdown-content dropdown-end mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
@@ -93,62 +94,72 @@
 				</div>
 			</div>
 		</div>
-	</header> -->
+	</header>
 	<main class="container">
 		<section class="banner">
 			<div class="carousel w-full">
 				<div id="slide1" class="carousel-item relative w-full">
 					<!-- <img src="./images/cover/cover-1.png" class="w-full" /> -->
-					<div class="hero min-h-[calc(100vh)]" style="background-image: url(./images/cover/cover-1.png);">
+					<div class="hero min-h-[calc(100vh_-_84px)]"
+						style="background-image: url(./images/cover/cover-1.png);">
 						<div class="hero-overlay bg-opacity-60"></div>
 						<div class="hero-content text-center text-neutral-content">
-							<div class="max-w-md">
-								<h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+							<div class="max-w-2xl">
+								<h1 class="mb-5 text-xl md:text-4xl lg:text-6xl font-semibold">Get Started Digital
+									Learning</h1>
 								<p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
 									excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-								<button class="btn btn-primary">Get Started</button>
+								<button
+									class="btn bg-primary-color md:text-lg lg:text-xl border-transparent text-white outline-none">Get
+									Started</button>
 							</div>
 						</div>
 					</div>
 					<div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-						<a href="#slide3" class="btn btn-ghost">❮</a>
-						<a href="#slide2" class="btn btn-ghost">❯</a>
+						<a href="#slide3" class="btn btn-ghost text-white">❮</a>
+						<a href="#slide2" class="btn text-white btn-ghost">❯</a>
 					</div>
 				</div>
 				<div id="slide2" class="carousel-item relative w-full">
 					<!-- <img src="./images/cover/cover-2.jpg" class="w-full" /> -->
-					<div class="hero min-h-[calc(100vh)]" style="background-image: url(./images/cover/cover-2.jpg);">
+					<div class="hero min-h-[calc(100vh_-_84px)]"
+						style="background-image: url(./images/cover/cover-2.jpg);">
 						<div class="hero-overlay bg-opacity-60"></div>
 						<div class="hero-content text-center text-neutral-content">
-							<div class="max-w-md">
+							<div class="max-w-2xl">
 								<h1 class="mb-5 text-5xl font-bold">Hello there</h1>
 								<p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
 									excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-								<button class="btn btn-primary">Get Started</button>
+								<button
+									class="btn bg-primary-color md:text-lg lg:text-xl border-transparent text-white">Get
+									Started</button>
 							</div>
 						</div>
 					</div>
 					<div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-						<a href="#slide1" class="btn btn-ghost">❮</a>
-						<a href="#slide3" class="btn btn-ghost">❯</a>
+						<a href="#slide1" class="btn btn-ghost text-white">❮</a>
+						<a href="#slide3" class="btn text-white btn-ghost">❯</a>
 					</div>
 				</div>
 				<div id="slide3" class="carousel-item relative w-full">
 					<!-- <img src="./images/cover/cover-3.jpg" class="w-full" /> -->
-					<div class="hero min-h-[calc(100vh)]" style="background-image: url(./images/cover/cover-3.jpg);">
+					<div class="hero min-h-[calc(100vh_-_84px)]"
+						style="background-image: url(./images/cover/cover-3.jpg);">
 						<div class="hero-overlay bg-opacity-60"></div>
 						<div class="hero-content text-center text-neutral-content">
-							<div class="max-w-md">
+							<div class="max-w-2xl">
 								<h1 class="mb-5 text-5xl font-bold">Hello there</h1>
 								<p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
 									excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-								<button class="btn btn-primary">Get Started</button>
+								<button
+									class="btn bg-primary-color md:text-lg lg:text-xl border-transparent text-white">Get
+									Started</button>
 							</div>
 						</div>
 					</div>
 					<div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-						<a href="#slide2" class="btn btn-ghost">❮</a>
-						<a href="#slide1" class="btn btn-ghost">❯</a>
+						<a href="#slide2" class="btn btn-ghost text-white">❮</a>
+						<a href="#slide1" class="btn text-white btn-ghost">❯</a>
 					</div>
 				</div>
 			</div>
