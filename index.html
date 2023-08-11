@@ -95,22 +95,23 @@
 			</div>
 		</div>
 	</header>
-	<main class="container">
+	<main class="container px-4">
 		<section class="banner">
 			<div class="carousel w-full">
 				<div id="slide1" class="carousel-item relative w-full">
 					<!-- <img src="./images/cover/cover-1.png" class="w-full" /> -->
-					<div class="hero min-h-[calc(100vh_-_84px)]"
-						style="background-image: url(./images/cover/cover-1.png);">
+					<div class="hero " style="background-image: url(./images/cover/cover-1.png);">
+						<!-- lg:min-h-[calc(100vh_-_84px)] -->
 						<div class="hero-overlay bg-opacity-60"></div>
 						<div class="hero-content text-center text-neutral-content">
 							<div class="max-w-2xl">
 								<h1 class="mb-5 text-xl md:text-4xl lg:text-6xl font-semibold">Get Started Digital
 									Learning</h1>
-								<p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-									excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+								<p class="mb-5 text-xs md:text-base lg:text-lg">It is a long established fact that a
+									reader will be distracted by the
+									readable content of a page when looking at its layout.</p>
 								<button
-									class="btn bg-primary-color md:text-lg lg:text-xl border-transparent text-white outline-none">Get
+									class="btn bg-primary-color md:text-lg lg:text-xl border-transparent text-white outline-none capitalize">Get
 									Started</button>
 							</div>
 						</div>
@@ -122,16 +123,21 @@
 				</div>
 				<div id="slide2" class="carousel-item relative w-full">
 					<!-- <img src="./images/cover/cover-2.jpg" class="w-full" /> -->
-					<div class="hero min-h-[calc(100vh_-_84px)]"
-						style="background-image: url(./images/cover/cover-2.jpg);">
+					<div class="hero" style="background-image: url(./images/cover/cover-2.jpg);">
 						<div class="hero-overlay bg-opacity-60"></div>
 						<div class="hero-content text-center text-neutral-content">
 							<div class="max-w-2xl">
-								<h1 class="mb-5 text-5xl font-bold">Hello there</h1>
-								<p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-									excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+								<h1 class="mb-5 text-xl md:text-4xl lg:text-6xl font-semibold">Get Started Digital
+									Learning</h1>
+								<p class="mb-5 text-xs md:text-base lg:text-lg">It is a long established fact that a
+									reader will
+									be
+									distracted
+									by
+									the
+									readable content of a page when looking at its layout.</p>
 								<button
-									class="btn bg-primary-color md:text-lg lg:text-xl border-transparent text-white">Get
+									class="btn bg-primary-color md:text-lg lg:text-xl border-transparent text-white outline-none capitalize">Get
 									Started</button>
 							</div>
 						</div>
@@ -143,16 +149,17 @@
 				</div>
 				<div id="slide3" class="carousel-item relative w-full">
 					<!-- <img src="./images/cover/cover-3.jpg" class="w-full" /> -->
-					<div class="hero min-h-[calc(100vh_-_84px)]"
-						style="background-image: url(./images/cover/cover-3.jpg);">
+					<div class="hero" style="background-image: url(./images/cover/cover-3.jpg);">
 						<div class="hero-overlay bg-opacity-60"></div>
 						<div class="hero-content text-center text-neutral-content">
 							<div class="max-w-2xl">
-								<h1 class="mb-5 text-5xl font-bold">Hello there</h1>
-								<p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-									excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+								<h1 class="mb-5 text-xl md:text-4xl lg:text-6xl font-semibold">Get Started Digital
+									Learning</h1>
+								<p class="mb-5 text-xs md:text-base lg:text-lg">It is a long established fact that a
+									reader will be distracted by the
+									readable content of a page when looking at its layout.</p>
 								<button
-									class="btn bg-primary-color md:text-lg lg:text-xl border-transparent text-white">Get
+									class="btn bg-primary-color md:text-lg lg:text-xl border-transparent text-white outline-none capitalize">Get
 									Started</button>
 							</div>
 						</div>
@@ -163,6 +170,91 @@
 					</div>
 				</div>
 			</div>
+		</section>
+
+		<section class="courses">
+			<div class="max-w-2xl mx-auto text-center mt-8 md:mt-14 lg:mt-16">
+				<h1 class="mb-5 text-xl md:text-4xl lg:text-6xl font-semibold">Discover Our Popular Courses</h1>
+				<p class="mb-5 text-sm md:text-base lg:text-lg text-gray-400">It is a long established fact that a
+					reader will be
+					distracted by the readable content
+					of a page when looking at its layout.</p>
+
+			</div>
+			<div class="card-container grid grid-cols-1 lg:grid-cols-2 gap-4">
+				<div class="card bg-base-100 shadow-xl md:flex-row md:items-center">
+					<figure><img src="./images/course/course-1.png" alt="course-1" class="w-full md:w-56 h-56" />
+					</figure>
+					<div class="card-body">
+						<h2 class="card-title">Fundamental Of UI/UX Design</h2>
+						<p>Some quick example text to build on the card title and make up the bulk of the card.</p>
+						<div class="card-actions justify-end">
+							<p class="text-lg font-semibold text-primary-color">Price : 20$</p>
+						</div>
+					</div>
+				</div>
+				<div class="card bg-base-100 shadow-xl md:flex-row md:items-center">
+					<figure><img src="./images/course/course-2.png" alt="course-1" class="w-full md:w-56 h-56" />
+					</figure>
+					<div class="card-body">
+						<h2 class="card-title">Javascript Basic to advanced</h2>
+						<p>Some quick example text to build on the card title and make up the bulk of the card.</p>
+						<div class="card-actions justify-end">
+							<p class="text-lg font-semibold text-primary-color">Price : 20$</p>
+						</div>
+					</div>
+				</div>
+				<div class="card bg-base-100 shadow-xl md:flex-row md:items-center">
+					<figure><img src="./images/course/course-3.png" alt="course-1" class="w-full md:w-56 h-56" />
+					</figure>
+					<div class="card-body">
+						<h2 class="card-title">Fullstack Web Development</h2>
+						<p>Some quick example text to build on the card title and make up the bulk of the card.</p>
+						<div class="card-actions justify-end">
+							<p class="text-lg font-semibold text-primary-color">Price : 20$</p>
+						</div>
+					</div>
+				</div>
+				<div class="card bg-base-100 shadow-xl md:flex-row md:items-center hidden lg:flex">
+					<figure><img src="./images/course/course-4.png" alt="course-1" class="w-full h-56" /></figure>
+					<div class="card-body">
+						<h2 class="card-title">Digital Marketing</h2>
+						<p>Some quick example text to build on the card title and make up the bulk of the card.</p>
+						<div class="card-actions justify-end">
+							<p class="text-lg font-semibold text-primary-color">Price : 20$</p>
+						</div>
+					</div>
+				</div>
+				<div class="card bg-base-100 shadow-xl md:flex-row md:items-center hidden lg:flex">
+					<figure><img src="./images/course/course-5.png" alt="course-1" class="w-full h-56" /></figure>
+					<div class="card-body">
+						<h2 class="card-title">Photography Basic Rules</h2>
+						<p>Some quick example text to build on the card title and make up the bulk of the card.</p>
+						<div class="card-actions justify-end">
+							<p class="text-lg font-semibold text-primary-color">Price : 20$</p>
+						</div>
+					</div>
+				</div>
+				<div class="card bg-base-100 shadow-xl md:flex-row md:items-center hidden lg:flex">
+					<figure><img src="./images/course/course-6.png" alt="course-1" class="w-full h-56" /></figure>
+					<div class="card-body">
+						<h2 class="card-title">Motion Graphics</h2>
+						<p>Some quick example text to build on the card title and make up the bulk of the card.</p>
+						<div class="card-actions justify-end">
+							<p class="text-lg font-semibold text-primary-color">Price : 20$</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="flex justify-center mt-6 md:mt-8 lg:mt-12">
+				<button class="btn bg-primary-color py-3 px-4 lg:px-8 text-lg font-semibold text-white lg:hidden">View
+					All</button>
+				<button
+					class="btn bg-primary-color py-3 px-4 lg:px-8 text-lg font-semibold text-white hidden md:block">See
+					More
+					Courses</button>
+			</div>
+
 		</section>
 
 	</main>
